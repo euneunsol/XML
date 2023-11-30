@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="euc-kr"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:output method="html" />
+<xsl:import href="Main_bar.html"/>  
+<xsl:output method="html" />
   <xsl:template match="/">
+  <h2>
+    <xsl:apply-imports/>
+    </h2>
+   
     <html>
       <head>
-        <title>°ϊ µΏΎΖΈ®.i-Keeper<xsl:value-of select="nearby_temple/temple/name"></xsl:value-of></title>
+        <title>i-Keeper<xsl:value-of select="nearby_temple/temple/name"></xsl:value-of></title>
       </head>
       <body>
         <h1 align="center">
-          <strong>°ϊ µΏΎΖΈ®</strong>
+          <strong>κ³Όλ™μ•„λ¦¬</strong>
           <xsl:value-of select="project/club/name/i-Keeper" />
         </h1>
         <p align="center">
@@ -16,7 +21,7 @@
             <xsl:value-of select="project/club/name/i-Keeper" />i-Keeper</strong>
           <br />
           <br>
-            <strong>µΏΎΖΈ® Ό³Έν</strong>
+            <strong>λ™μ•„λ¦¬μ„¤λª…</strong>
           </br>
           <br />
           <xsl:value-of select="project/club/explanation/i-Keeper" />

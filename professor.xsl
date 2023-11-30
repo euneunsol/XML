@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="euc-kr"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:output method="html" />
+<xsl:import href="Main_bar.html"/>  
+<xsl:output method="html" />
   <xsl:template match="/">
+  <h2>
+    <xsl:apply-imports/>
+    </h2>
+   
     <html>
       <head>
-        <title>±≥ºˆ¡¯<xsl:value-of select="nearby_temple/temple/name"></xsl:value-of></title>
+        <title>ÍµêÏàòÏßÑ<xsl:value-of select="nearby_temple/temple/name"></xsl:value-of></title>
       </head>
       <body>
         <h1 align="center">
-          <strong>±≥ºˆ¡¯</strong>
+          <strong>ÍµêÏàòÏßÑ</strong>
         </h1>
         <table align="center">
           <tr>
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro1/name" />±Ëƒ•»≠</strong>
+                  <xsl:value-of select="project/professor/d2pro1/name" />ÍπÄÏπ†Ìôî</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro1/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro1/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro1/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro1/MajorField" />
                 <br></br>
@@ -46,26 +51,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro2/name" />πË¿Œ«—</strong>
+                  <xsl:value-of select="project/professor/d2pro2/name" />Î∞∞Ïù∏Ìïú</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro2/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro2/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro2/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro2/MajorField" />
                 <br></br>
@@ -77,26 +82,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro2/name" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" />±Ë«‡∞Ô</strong>
+                  <xsl:value-of select="project/professor/d2pro2/name"/>ÍπÄÌñâÍ≥§</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro3/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro3/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro3/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro3/MajorField" />
                 <br></br>
@@ -110,26 +115,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro4/name" />¿Ã¡æ«–</strong>
+                  <xsl:value-of select="project/professor/d2pro4/name" />Ïù¥Ï¢ÖÌïô</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro4/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro4/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro4/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro4/MajorField" />
                 <br></br>
@@ -141,26 +146,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro5/name" />∫Ø≈¬øµ</strong>
+                  <xsl:value-of select="project/professor/d2pro5/name" />Î≥ÄÌÉúÏòÅ</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro5/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro5/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro5/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro5/MajorField" />
                 <br></br>
@@ -172,26 +177,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro6/name" />Ω≈¡§»∆</strong>
+                  <xsl:value-of select="project/professor/d2pro6/name" />Ïã†Ï†ïÌõà</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro6/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro6/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro6/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro6/MajorField" />
                 <br></br>
@@ -205,26 +210,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro7/name" />±ËπÃ«˝</strong>
+                  <xsl:value-of select="project/professor/d2pro7/name" />ÍπÄÎØ∏Ìòú</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro7/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro7/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro7/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro7/MajorField" />
                 <br></br>
@@ -236,26 +241,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro8/name" />º≠µø∏∏</strong>
+                  <xsl:value-of select="project/professor/d2pro8/name" />ÏÑúÎèôÎßå</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro8/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro8/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro8/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro8/MajorField"></xsl:value-of>
                 <br></br>
@@ -267,26 +272,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro9/name" />±Ë±‚º∫</strong>
+                  <xsl:value-of select="project/professor/d2pro9/name" />ÍπÄÍ∏∞ÏÑ±</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro9/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro9/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro9/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro9/MajorField" />
                 <br></br>
@@ -300,26 +305,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro10/name" />¿¸ºˆ∫Û</strong>
+                  <xsl:value-of select="project/professor/d2pro10/name" />Ï†ÑÏàòÎπà</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro10/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro10/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro10/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro10/MajorField" />
                 <br></br>
@@ -329,26 +334,26 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro11/name" />±Ëµø¡÷</strong>
+                  <xsl:value-of select="project/professor/d2pro11/name" />ÍπÄÎèôÏ£º</strong>
                 <br />
                 <br>
-                  <strong>ø¨±∏Ω«</strong>
+                  <strong>Ïó∞Íµ¨Ïã§</strong>
                 </br>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro11/lab" />
                 <br></br>
                 <br />
-                <strong>¿¸»≠π¯»£</strong>
+                <strong>Ï†ÑÌôîÎ≤àÌò∏</strong>
                 <br />
                 <xsl:value-of select="project/professor/d2pro11/PhoneNumber" />
                 <br></br>
                 <br></br>
-                <strong>¿Ã∏ﬁ¿œ</strong>
+                <strong>Ïù¥Î©îÏùº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro11/Email" />
                 <br></br>
                 <br></br>
-                <strong>¿¸∞¯∫–æﬂ</strong>
+                <strong>Ï†ÑÍ≥µÎ∂ÑÏïº</strong>
                 <br></br>
                 <xsl:value-of select="project/professor/d2pro11/MajorField" />
                 <br></br>

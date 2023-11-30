@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전공필수</title>
+    
+    <link rel="stylesheet" type="ProjectXml.xml" href="mainsub.xsl">
+
+</head>
+<body>
+    <script>
+        function applyXSL() {
+            // mainsub.xsl 파일을 가져와서 적용
+            var xslFile = 'mainsub.xsl'; // 실제 파일 경로로 변경
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var xslDoc = this.responseXML;
+                    
+                    // 가져온 XSL 파일을 사용하여 변환 수행
+                    // 여기에서 실제로 변환을 수행하거나 필요한 작업을 수행
+                    console.log('XSL 파일을 적용합니다.');
+                }
+            };
+            xhttp.open("GET", xslFile, true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

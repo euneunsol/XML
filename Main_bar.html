@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴퓨터소프트웨어학부</title>
+    <script>
+        // function loadXMLDoc(filename) {
+        //     var xhttp;
+        //     if (window.ActiveXObject) {
+        //         xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+        //     } else {
+        //         xhttp = new XMLHttpRequest();
+        //     }
+        //     xhttp.open("GET", filename, false);
+        //     try {
+        //         xhttp.responseType = "msxml-document";
+        //     } catch (err) { }
+        //     xhttp.send("");
+        //     return xhttp.responseXML;
+        // }
+
+        // var mainsubXSL = 'mainsub.xsl';
+        // var selectsubXSL = 'selectsub.xsl';
+        // var curriculumXSL = 'curriculum.xsl';
+        // var balance = 'balance.xsl';
+        // var club_iKeeper = 'club_i-Keeper.xsl';
+        // var club_jumping = 'club_jumping.xsl';
+        // var professor = 'professor.xsl';
+        // var Scholarship = 'Scholarship.xsl';
+        // var conditions = 'conditions.xsl';
+        // var employ = 'employ.xsl';
+
+        // function displayResult(xmlFileName, xslFileName) {
+        //     var xsl;
+        //     var resultDocument;
+        //     if (xslFileName === 'mainsub.xsl') {
+        //         xsl = loadXMLDoc(mainsubXSL);
+        //     } else if (xslFileName === 'selectsub.xsl') {
+        //         xsl = loadXMLDoc(selectsubXSL);
+        //     } else if (xslFileName === 'curriculum.xsl') {
+        //         xsl = loadXMLDoc(curriculumXSL);
+        //     } else if (xslFileName === 'balance.xsl') {
+        //         xsl = loadXMLDoc(balance);
+        //     } else if (xslFileName === 'club_i-Keeper.xsl') {
+        //         xsl = loadXMLDoc(club_iKeeper);
+        //     } else if (xslFileName === 'club_jumping.xsl') {
+        //         xsl = loadXMLDoc(club_jumping);
+        //     } else if (xslFileName === 'professor.xsl') {
+        //         xsl = loadXMLDoc(professor);
+        //     } else if (xslFileName === 'Scholarship.xsl') {
+        //         xsl = loadXMLDoc(Scholarship);
+        //     } else if (xslFileName === 'conditions.xsl') {
+        //         xsl = loadXMLDoc(conditions);
+        //     } else if (xslFileName === 'employ.xsl') {
+        //         xsl = loadXMLDoc(employ);
+        //     }
+
+        //     if (xsl) {
+        //         var xml = loadXMLDoc("ProjectXml.xml");
+
+        //         var destinationPage = '';
+        //         if (xslFileName === 'mainsub.xsl') {
+        //             destinationPage = '//mainsub.xsl';
+        //         } else if (xslFileName === 'selectsub.xsl') {
+        //             destinationPage = '//selectsub.xsl';
+        //         } else if (xslFileName === 'curriculum.xsl') {
+        //             destinationPage = '//curriculum.xsl';
+        //         } else if (xslFileName === 'balance.xsl') {
+        //             destinationPage = '//balance.xsl';
+        //         } else if (xslFileName === 'club_i-Keeper.xsl') {
+        //             destinationPage = '//club_i-Keeper.xsl';
+        //         } else if (xslFileName === 'club_jumping.xsl') {
+        //             destinationPage = '//club_jumping.xsl';
+        //         } else if (xslFileName === 'professor.xsl') {
+        //             destinationPage = '//professor.xsl';
+        //         } else if (xslFileName === 'Scholarship.xsl') {
+        //             destinationPage = '//Scholarship.xsl';
+        //         } else if (xslFileName === 'conditions.xsl') {
+        //             destinationPage = '//conditions.xsl';
+        //         } else if (xslFileName === 'employ.xsl') {
+        //             destinationPage = '//employ.xsl';
+        //         }
+
+        //         // Internet Explorer
+        //         if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+        //             ex = xml.transformNode(xsl);
+        //             document.getElementById("example").innerHTML = ex;
+        //         }
+        //         // Edge, Firefox, Chrome, Opera, Safari
+        //         else if (document.implementation && document.implementation.createDocument) {
+        //             xsltProcessor = new XSLTProcessor();
+        //             xsltProcessor.importStylesheet(xsl);
+        //             resultDocument = xsltProcessor.transformToFragment(xml, document);
+        //             document.getElementById("example").appendChild(resultDocument);
+        //         }
+        //         console.log("XML:", xml);
+        //         console.log("XSL:", xsl);
+        //     } else {
+        //         console.error("XSL file not found: " + xslFileName);
+        //     }
+        // }
+        function applyXSL() {
+            // mainsub.html에 있는 iframe의 contentWindow 객체를 사용하여
+            // mainsub.html의 applyXSL 함수를 호출
+            var iframe = document.getElementById('mainsubFrame');
+            var applyXSLFunction = iframe.contentWindow.applyXSL;
+            
+            // XSL 파일 적용 함수 호출
+            if (applyXSLFunction) {
+                applyXSLFunction();
+            }
+        }
+
+    </script>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            background-color: #000066;
+        }
+
+        li {
+            float: left;
+            position: relative;
+            flex-grow: 1;
+            color: white;
+            padding: 15px;
+        }
+
+        li ul {
+            display: none;
+            position: absolute;
+            background-color: #000066;
+            padding: 0;
+            margin: 0;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        li ul li {
+            float: none;
+            display: block;
+        }
+
+        h1 {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        h1 img {
+            width: 250px;
+            height: 100px;
+            position: absolute;
+            left: 10px;
+        }
+
+        h1 span {
+            color: black;
+            font-size: 45px;
+            line-height: 100px;
+            display: inline-block;
+        }
+
+        button {
+            background-color: #000066;
+            color: white;
+            border: none;
+            /* padding: 10px 15px;
+            margin: 0px;  */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+
+        li ul li button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><img src="DCU_Logo.jpg" alt="컴퓨터소프트웨어학부"><span>컴퓨터소프트웨어학부</span></h1>
+    <ul>
+        <li>전공
+            <ul>
+                <li> <button onclick="applyXSL()">전공필수</button></li>
+                <li><a href="selectsub.html">전공선택</a></li>
+            </ul>
+        </li>
+        <li><a href="curriculum.html">커리큘럼</a></li>
+        <li><a href="balance.html">교양</a></li>
+        <li>과동아리
+            <ul>
+                <li><a href="club_i-Keeper.html">i-Keeper</a></li>
+                <li><a href="club_jumping.html">jumping</a></li>
+            </ul>
+        </li>
+
+        <li><a href="professor.html">>교수소개</a></li>
+        <li><a href="Scholarship.html">장학 및 지원</a></li>
+        <li><a href="conditions.html">졸업요건</a></li>
+        <li><a href="employ.html">졸업 후 진로상황</a></li>
+    </ul>
+
+</body>
+
+</html>
