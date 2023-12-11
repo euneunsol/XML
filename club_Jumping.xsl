@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="euc-kr"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:import href="Main_bar.html"/>  
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"> 
 <xsl:output method="html" />
   <xsl:template match="/">
-  <h2>
-    <xsl:apply-imports/>
-    </h2>
-   
-    <html>
+  <html>
       <head>
         <title>jumping<xsl:value-of select="nearby_temple/temple/name" /></title>
       </head>

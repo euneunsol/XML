@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:import href="Main_bar.html"/>  
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
 <xsl:output method="html"/>
   <xsl:template match="/">
-  <h2>
-    <xsl:apply-imports/>
-    </h2>
-   
-    <html>
+  <html>
       <head>
         <title>장학 및 지원</title>
       </head>
