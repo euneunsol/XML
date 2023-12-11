@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
-<xsl:template match="/">
-<html>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="/" mode="employ">
+    <xsl:param name="calling-stylesheet"/>
+    <xsl:param name="stylesheet-id"/>
+    <html>
       <head>
         <style>
           table {
@@ -46,7 +49,8 @@
           </tr>
         </table>
         <p>
-          <strong>그 외</strong> 대학원 진학을 통해 개인의 역량을 강화함.</p>
+          <strong>그 외</strong> 대학원 진학을 통해 개인의 역량을 강화함.
+        </p>
       </body>
     </html>
   </xsl:template>

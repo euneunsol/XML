@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="euc-kr"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:output method="html" />
-  <xsl:template match="/">
+  <xsl:output method="html" />
+  <xsl:template match="/" mode="professor">
+    <xsl:param name="calling-stylesheet"/>
+    <xsl:param name="stylesheet-id"/>
     <html>
       <head>
-        <title>교수진<xsl:value-of select="nearby_temple/temple/name"></xsl:value-of></title>
+        <title>교수진          <xsl:value-of select="nearby_temple/temple/name"></xsl:value-of>
+        </title>
       </head>
       <body>
         <h1 align="center">
@@ -15,7 +18,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro1/name" />김칠화</strong>
+                  <xsl:value-of select="project/professor/d2pro1/name" />
+김칠화</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -46,7 +50,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro2/name" />배인한</strong>
+                  <xsl:value-of select="project/professor/d2pro2/name" />
+배인한</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -77,7 +82,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro2/name"/>김행곤</strong>
+                  <xsl:value-of select="project/professor/d2pro2/name"/>
+김행곤</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -110,7 +116,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro4/name" />이종학</strong>
+                  <xsl:value-of select="project/professor/d2pro4/name" />
+이종학</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -141,7 +148,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro5/name" />변태영</strong>
+                  <xsl:value-of select="project/professor/d2pro5/name" />
+변태영</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -172,7 +180,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro6/name" />신정훈</strong>
+                  <xsl:value-of select="project/professor/d2pro6/name" />
+신정훈</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -205,7 +214,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro7/name" />김미혜</strong>
+                  <xsl:value-of select="project/professor/d2pro7/name" />
+김미혜</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -236,7 +246,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro8/name" />서동만</strong>
+                  <xsl:value-of select="project/professor/d2pro8/name" />
+서동만</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -267,7 +278,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro9/name" />김기성</strong>
+                  <xsl:value-of select="project/professor/d2pro9/name" />
+김기성</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -300,7 +312,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro10/name" />전수빈</strong>
+                  <xsl:value-of select="project/professor/d2pro10/name" />
+전수빈</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>
@@ -329,7 +342,8 @@
             <td>
               <p align="center">
                 <strong style="color:Blue;">
-                  <xsl:value-of select="project/professor/d2pro11/name" />김동주</strong>
+                  <xsl:value-of select="project/professor/d2pro11/name" />
+김동주</strong>
                 <br />
                 <br>
                   <strong>연구실</strong>

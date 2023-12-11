@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
 <xsl:output method="html"/>
-  <xsl:template match="/">
+  <xsl:template match="/" mode="Scholarship">
+  <xsl:param name="calling-stylesheet"/>
+  <xsl:param name="stylesheet-id"/>
   <html>
       <head>
         <title>장학 및 지원</title>

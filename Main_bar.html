@@ -2,111 +2,125 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>컴퓨터소프트웨어학부</title>
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        header {
-          background-color: #000066;
-          padding: 30px;
-          text-align: center;
-          font-size: 35px;
-          color: white;
-        }
+  <meta charset="UTF-8" />
+  <title>컴퓨터소프트웨어학부</title>
+  <style>
+    body {
+      text-align: center;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
 
-        nav {
-          float: left;
-          width: 30%;
-          height: 300px; 
-          background: #000066;
-          padding: 20px;
-        }
-        
-        nav ul {
-          list-style-type: none;
-          padding: 0;
-        }
-        
-        article {
-          float: left;
-          padding: 20px;
-          width: 70%;
-          background-color: #f1f1f1;
-          height: 300px; 
-        }
-        
-        section::after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        footer {
-          background-color: #777;
-          padding: 10px;
-          text-align: center;
-          color: white;
-        }
-        
-        @media (max-width: 600px) {
-          nav, article {
-            width: 100%;
-            height: auto;
-          }
-        }
-        </style>
+    .nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      background-color: #000066;
+    }
+
+    .nav li {
+      float: left;
+      position: relative;
+      flex-grow: 1;
+      color: white;
+      padding: 15px;
+    }
+
+    .nav li ul {
+      display: none;
+      position: absolute;
+      background-color: #000066;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav li:hover ul {
+      display: block;
+    }
+
+    .nav li ul li {
+      float: none;
+      display: block;
+    }
+
+    .nav h1 {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .nav h1 img {
+      width: 250px;
+      height: 100px;
+      position: absolute;
+      left: 10px;
+    }
+
+    .nav h1 span {
+      color: black;
+      font-size: 45px;
+      line-height: 100px;
+      display: inline-block;
+    }
+
+    .nav.button {
+      background-color: #000066;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav.button:hover {
+      background-color: #003366;
+    }
+
+    .nav li ul li button {
+      width: 100%;
+    }
+
+    /* 추가된 스타일 */
+    #infoContainer {
+      margin-top: 20px;
+      text-align: left;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h2><img src="DCU_Logo.jpg" alt="컴퓨터소프트웨어학부"><span>컴퓨터소프트웨어학부</span></h2>
-      </header>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="#">전공</a></li>
-            <li><a href="#">과동아리</a></li>
-            <li><a href="#">교수소개</a></li>
-            <li><a href="#">장학 및 지원</a></li>
-            <li><a href="#">졸업요건</a></li>
-            <li><a href="#">졸업 후 진로상황</a></li>
-          </ul>
-        </nav>
-        <article>
-            <h1>전공</h1>
-           
-          </article>
-        </section>
+  <div class = "nav">
+    <h1><img src="DCU_Logo.jpg" alt="컴퓨터소프트웨어학부"><span>컴퓨터소프트웨어학부</span></h1>
     <ul>
-        <li>전공
-            <ul>
-                <li> <button onclick="applyXSL()">전공필수</button></li>
-                <li><a href="selectsub.html">전공선택</a></li>
-            </ul>
-        </li>
-        <li><a href="curriculum.html">커리큘럼</a></li>
-        <li><a href="balance.html">교양</a></li>
-        <li>과동아리
-            <ul>
-                <li><a href="club_i-Keeper.html">i-Keeper</a></li>
-                <li><a href="club_jumping.html">jumping</a></li>
-            </ul>
-        </li>
-
-        <li><a href="professor.html">교수소개</a></li>
-        <li><a href="Scholarship.html">장학 및 지원</a></li>
-        <li><a href="conditions.html">졸업요건</a></li>
-        <li><a href="employ.html">졸업 후 진로상황</a></li>
+      <li>전공
+        <ul>
+          <li><a href="#mainsub">전공필수</a></li>
+          <li><a href="#selectsub">전공선택</a></li>
+        </ul>
+      </li>
+      <li><a href="#curriculum">커리큘럼</a></li>
+      <li><a href="#balance">교양</a></li>
+      <li>과동아리
+        <ul>
+          <li><a href="#i-Keeper">i-Keeper</a></li>
+          <li><a href="#jumping">jumping</a></li>
+        </ul>
+      </li>
+      <li><a href="#professor">교수소개</a></li>
+      <li><a href="#Scholarship">장학 및 지원</a></li>
+      <li><a href="#conditions">졸업요건</a></li>
+      <li><a href="#employ">졸업 후 진로상황</a></li>
     </ul>
-
+  </div>
+  
 </body>
 
 </html>

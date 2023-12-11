@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="euc-kr"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
 <xsl:output method="html" />
-  <xsl:template match="/">
+  <xsl:template match="/" mode="club_i-Keeper">
+  <xsl:param name="calling-stylesheet"/>
+  <xsl:param name="stylesheet-id"/>
   <html>
       <head>
         <title>i-Keeper<xsl:value-of select="nearby_temple/temple/name"></xsl:value-of></title>

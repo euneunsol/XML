@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
-<xsl:template match="/">
-<html>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="/" mode="selectsub">
+    <xsl:param name="calling-stylesheet"/>
+    <xsl:param name="stylesheet-id"/>
+    <html>
       <head>
         <style>
           table {
